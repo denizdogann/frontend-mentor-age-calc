@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>age calc</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+</head>
+<body>
+  
+  <div class="container">
+    <div class="top">
+      <form action="">
+        <div class="flex-input">
+          <label for="day">DAY</label>
+          <input id="day" autocomplete="off" class="input day" type="text" name="day" placeholder="DD">
+          <span id="day-error" class="error-text"></span>
+        </div>
+        <div class="flex-input">
+          <label for="month">MONTH</label>
+          <input id="month" autocomplete="off" class="input month" type="text" name="month" placeholder="MM">
+          <span id="month-error" class="error-text"></span>
+        </div>
+        <div class="flex-input">
+          <label for="year">YEAR</label>
+          <input id="year" autocomplete="off" class="input year" type="text" name="year" placeholder="YYYY">
+          <span id="year-error" class="error-text"></span>
+        </div>
+          
+      </form>
+    </div>
+    <div class="middle">
+      <hr class="line">
+      <svg id="sub" xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 46 44"><g fill="none" stroke="#FFF" stroke-width="2"><path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"/></g></svg>
+    </div>
+    
+    <div class="bottom">
+      <h1 class="result"> <span id="result-year">--</span> years</h1>
+      <h1 class="result"> <span id="result-month">--</span> months</h1>
+      <h1 class="result"> <span id="result-day">--</span> days</h1>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
